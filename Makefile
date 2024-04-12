@@ -9,8 +9,8 @@ main:
 	${clang} ${CFLAGS} -o main main.c
 
 # Compile helloworld.c
-helloWorld:
-	${clang} ${CFLAGS} -o helloWorld helloWorld.c
+hello_world:
+	${clang} ${CFLAGS} -o hello_world hello_world.c
 
 # Run main
 run:
@@ -18,4 +18,4 @@ run:
 
 # Clean executables 
 clean:
-	rm -f helloWorld main
+	rm -f hello_world main
