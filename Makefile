@@ -1,10 +1,21 @@
-all: create_processes hello_world
+# Compile
+clang = clang
 
-create_processes: create_processes.c
-	gcc -o create_processes create_processes.c
+# Compile options 
+CFLAGS = -Wall -std=c11
 
-hello_world: hello_world.c
-	gcc -o hello_world hello_world.c
+# Compile main.c
+main:
+	${clang} ${CFLAGS} -o main main.c
 
+# Compile helloworld.c
+helloWorld:
+	${clang} ${CFLAGS} -o helloWorld helloWorld.c
+
+# Run main
+run:
+	./main
+
+# Clean executables 
 clean:
-	rm -f create_processes hello_world
+	rm -f helloWorld main
