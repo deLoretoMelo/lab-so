@@ -29,7 +29,7 @@ int main() {
 
     // Runs the Hello World program for each process
     else if (pid == 0) {    
-      execl("./helloWorld", "./helloWorld", NULL); // Runs the Hello World program
+      execl("./hell_oWorld", "./hello_World", NULL); // Runs the Hello World program
       printf("Exec failed.\n");
       return 0;
     }
@@ -39,7 +39,7 @@ int main() {
   for (int i = 0; i < processNumber; i++) {
     wait(NULL);
   }
-  execl("./helloWorld", "./helloWorld", NULL);
+  execl("./hello_World", "./hello_World", NULL);
   printf("All processes have finished.\n");
 
   return 0;
